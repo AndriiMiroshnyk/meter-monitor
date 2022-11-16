@@ -43,5 +43,5 @@ jobs:
     - name: deploy
       run: |
         docker build -t meter-monitor .
-        docker image push ${{DOCKERHUB_USER}}/meter-monitor:latest
+        docker image push $DOCKERHUB_USER/meter-monitor:latest
         docker ps -a
