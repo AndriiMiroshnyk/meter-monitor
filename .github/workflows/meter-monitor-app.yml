@@ -44,4 +44,5 @@ jobs:
       run: |
         docker build -t meter-monitor .
         docker image push $DOCKERHUB_USER/meter-monitor:latest
+        docker run meter-monitor:latest 
         docker ps -a
